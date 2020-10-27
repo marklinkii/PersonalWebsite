@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <link rel="icon" href="icon.PNG" type="image/png" size="32x32">
+    <link rel="icon" href="icon_48.PNG" type="image/png" size="48x48">
+    <title>About</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+
+    body, html {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        background-color: #EFEFEF;
+        scroll-behavior: smooth;
+    }
+
+
+    /* Hero image template from: https://www.w3schools.com/howto/howto_css_hero_image.asp */
+    .hero-image {
+      /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("about_hero1.JPG");
+
+      display: box;
+      /* Set a specific height */
+      height: 60%;
+
+      /* Position and center the image to scale nicely on all screens */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Place text in the middle of the image */
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "Lucida Sans";
+      font-size: 30;
+      color: white;
+      margin: 0;
+      display: box;
+    }
+
+    /* Navigation bar template from: https://www.w3schools.com/howto/howto_js_topnav.asp */
+    .topnav {
+        background: rgba(250, 250, 250, 0.95);
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: black;
+        padding: 18px 20px;
+        text-decoration: none;
+        font-size: 19px;
+        font-family: "Lucida Sans";
+        font-weight: 999;
+        margin: 0;
+        display: inline-block;
+        transition: background 0.5s;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background: rgba(0, 0, 0, 0.3);
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-image: linear-gradient(top, #fafafa, #fafafa 90%, #c0e7f0 90%, #c0e7f0 100%);
+        background-image: -webkit-linear-gradient(top, #fafafa, #fafafa 90%, #c0e7f0 90%, #c0e7f0 100%);
+        color: black;
+        transition: background-image 0.5s;
+    }
+
+
+    .essay {
+        text-align: left;
+        font-family: "Lucida Sans";
+        font-size: 22;
+        margin-left: 210px;
+        margin-right: 210px;
+        line-height: 1.5;
+    }
+
+    .howdy {
+        text-align: center
+        font-family: "Lucida Sans";
+        color: #FF3B3F;
+        font-size: 60;
+        font-weight: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .button {
+      padding: 1px 32px;
+      border-radius: 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      background-color: whitesmoke;
+      color: black;
+      border: 2px solid #555555;
+      transition-duration: 0.2s;
+    }
+
+    .button:hover {
+      background-color: #555555;
+      color: white;
+    }
+    .contact{
+        text-align: center;
+        font-family: "Lucida Sans";
+        font-size: 23;
+        margin-left: 210px;
+        margin-right: 210px;
+        line-height: 1.5;
+    }
+
+    .contact a{
+        text-decoration: none;
+        color:cornflowerblue;
+        transition: color 0.15s;
+    }
+    .contact a:hover{
+        color: #3f7be8;
+    }
+
+    .email{
+        border-radius: 10px;
+        border-color: cornflowerblue;
+        border-width: 1px;
+        border-style: solid;
+        margin-right: 25px;
+    }
+    .linkedin{
+        border-radius: 10px;
+        border-color: cornflowerblue;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .github{
+        border-radius: 10px;
+        border-color: cornflowerblue;
+        border-width: 1px;
+        border-style: solid;
+        margin-left: 25px;
+    }
+
+
+</style>
+</head>
+
+
+
+<body>
+
+<div class="topnav">
+    <a class="active" href=about.html>About</a>
+    <a href=portfolio.html>Portfolio</a>
+    <a href=index.html>Home</a>
+    <a href=qualifications.html>Qualifications</a>
+    <a href=service.html>Service</a>
+</div>
+
+<div class="hero-image">
+    <div class="hero-text">
+        <h1 style="color:#CAEBF2">About Me</h1>
+        <p>the man behind the code</p>
+        <button class="button" onCLick="scrollDown()" style="font-size:35; font-weight: 999"> &#11167; </button>
+    </div>
+</div>
+
+<div id="transition">
+    <br>
+</div>
+
+<div id="howdy">
+    <p class="howdy">Howdy!</p>
+</div>
+
+<div class="essay" id="essay">
+    <p style="color:#333333">
+        I am currently a Junior at Texas A&M studying computer science with a minor in cyber security. My background in programming
+        stems back to high school where I began my interest in software development. I started learning the basics of
+        programming in my spare time after school, and I was greatly intrigued by the wide variety of applications that
+        software entails. Fast forward to today and that same passion is evermore present. I have a great foundation in
+        software that is constantly being built upon. Being able to create a program and see it in action is truly
+        amazing, and I look forward to innovating the latest and greatest in technology.
+    </p><br>
+    <p style="color:#333333">
+        Although I enjoy programming, there is much more to me than software development! In my free time, I love to
+        play any pick up sport that I can. Having an active lifestyle helps with both the stress of school and my
+        physical health, so I love being able to get together with friends and play sports. I regularly play both flag
+        football and basketball; I am a naturally competitive person, so I am always looking for opportunities to play a
+        game!
+    </p><br>
+    <p style="color:#333333">
+        Another major part of who I am is my identity as a Christian. Coming to college has strengthened my religious beliefs
+        immensely; I am currently a member of Fellowship Church, and I attend meetings three times a week. My church
+        fosters a community of passion and kindness, and it is heavily based on outreach to college students. Being able to
+        spread the word of God is incredible, and I get so many great opportunities to do that as a college student. Being
+        an active member of this church has been a huge blessing in my life, and its impacts go beyond what I can put into
+        words.
+    </p><br>
+</div>
+
+<div class="contact">
+    <hr><p style="color:#333333">
+    If you want to learn more about me, feel free to contact me!<br><br>
+    <a href="mailto:markuslink@tamu.edu"> <img src="email.PNG" width="90" height="70" title="Email Me"
+                                               alt="Mark" class="email"></a>
+    <a href="https://www.linkedin.com/in/marklinkii/" target="_blank"><img src="linkedin.JPG" width="150" height="70" title="LinkedIn"
+                                                                           alt="Mark" class="linkedin"></a>
+    <a href="https://Github.com/marklinkii" target="_blank"><img src="github.PNG" width="90" height="70" title="Github" alt="Mark" class="github">
+    </a><br><br>
+</p>
+</div>
+
+<script>
+    function scrollDown() {
+        var elmnt = document.getElementById("transition");
+        elmnt.scrollIntoView();
+    }
+</script>
+
+</body>
+</html>

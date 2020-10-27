@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <link rel="icon" href="icon.PNG" type="image/png" size="32x32">
+    <link rel="icon" href="icon_48.PNG" type="image/png" size="48x48">
+<title>Mark Link</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+    body{
+        background-image: url('bkg.JPG');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    /* Navigation bar template from: https://www.w3schools.com/howto/howto_js_topnav.asp */
+    .topnav {
+        background: rgba(250, 250, 250, 0.95);
+        overflow: hidden;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: black;
+        padding: 18px 20px;
+        text-decoration: none;
+        font-size: 19px;
+        font-family: "Lucida Sans";
+        font-weight: 999;
+        margin: 0;
+        display: inline-block;
+        transition: background 0.5s;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background: rgba(0, 0, 0, 0.3);
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-image: linear-gradient(top, #fafafa, #fafafa 90%, #c0e7f0 90%, #c0e7f0 100%);
+        background-image: -webkit-linear-gradient(top, #fafafa, #fafafa 90%, #c0e7f0 90%, #c0e7f0 100%);
+        color: black;
+    }
+
+    .name {
+        position: relative;
+        margin-right: 1100px;
+        left: 195px;
+        top: 135px;
+        font-family: "Lucida Sans";
+        font-size: 120;
+        color: #ffffff;
+        font-weight: 999;
+        text-shadow: 3px 3px 5px #000000;
+        transition: transform 0.8s;
+    }
+
+    .name:hover{
+        transform: scale(1.07);
+    }
+    .subtext{
+        font-size: 33;
+        color: #c0cfd1;
+    }
+
+</style>
+</head>
+
+
+
+<body>
+
+<div class="topnav">
+    <a href=about.html>About</a>
+    <a href=portfolio.html>Portfolio</a>
+    <a class="active" href=index.html>Home</a>
+    <a href=qualifications.html>Qualifications</a>
+    <a href=service.html>Service</a>
+</div>
+
+<div class="name">
+    <p align="left">
+        Mark<br>Link II<br><span class='subtext'>Developer & Innovator</span>
+	</p>
+</div>
+
+</body>
+</html>

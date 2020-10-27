@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <link rel="icon" href="icon.PNG" type="image/png" size="32x32">
+    <link rel="icon" href="icon_48.PNG" type="image/png" size="48x48">
+    <title>Qualifications</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <style>
+
+    body, html {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        background-color: #EFEFEF;
+        scroll-behavior: smooth;
+    }
+
+
+    /* Hero image template from: https://www.w3schools.com/howto/howto_css_hero_image.asp */
+    .hero-image {
+      /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("about_hero.JPG");
+
+      display: box;
+      /* Set a specific height */
+      height: 60%;
+
+      /* Position and center the image to scale nicely on all screens */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Place text in the middle of the image */
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "Lucida Sans";
+      font-size: 30;
+      color: white;
+      margin: 0;
+      display: box;
+    }
+
+    /* Navigation bar template from: https://www.w3schools.com/howto/howto_js_topnav.asp */
+    .topnav {
+        background: rgba(250, 250, 250, 0.95);
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: black;
+        padding: 18px 20px;
+        text-decoration: none;
+        font-size: 19px;
+        font-family: "Lucida Sans";
+        font-weight: 999;
+        margin: 0;
+        display: inline-block;
+        transition: background 0.5s;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background: rgba(0, 0, 0, 0.3);
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-image: linear-gradient(top, #fafafa, #fafafa 90%, #c0e7f0 90%, #c0e7f0 100%);
+        background-image: -webkit-linear-gradient(top, #fafafa, #fafafa 90%, #c0e7f0 90%, #c0e7f0 100%);
+        color: black;
+        transition: background-image 0.5s;
+    }
+
+    ul li {
+        float: left;
+        padding-right: 30px;
+    }
+
+    li:nth-child(1) {
+        list-style-type: none;
+    }
+
+    .howdy {
+        text-align: left;
+        font-family: "Lucida Sans";
+        color: #FF3B3F;
+        font-size: 35;
+        font-weight: 999;
+        display: flex;
+        margin-left: 300px;
+        margin-right: 300px;
+        line-height: 1.5;
+        margin-bottom: -30px;
+    }
+
+
+    .bullets {
+        font-family: "Lucida Sans";
+        color:#333333;
+        font-size: 23;
+        line-height: 1.5;
+        margin-left: 300px;
+        margin-right: 300px;
+        padding-bottom: 20px;
+    }
+
+    .button {
+      padding: 1px 32px;
+      border-radius: 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      background-color: whitesmoke;
+      color: black;
+      border: 2px solid #555555;
+      transition-duration: 0.2s;
+    }
+
+    .button:hover {
+      background-color: #555555;
+      color: white;
+    }
+    .pdf{
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    .contact{
+        text-align: center;
+        font-family: "Lucida Sans";
+        font-size: 23;
+        margin-left: 210px;
+        margin-right: 210px;
+        line-height: 1.5;
+    }
+
+    .contact a{
+        text-decoration: none;
+        color:cornflowerblue;
+        transition: color 0.15s;
+    }
+    .contact a:hover{
+        color: #3f7be8;
+    }
+
+    .email{
+        border-radius: 10px;
+        border-color: cornflowerblue;
+        border-width: 1px;
+        border-style: solid;
+        margin-right: 25px;
+    }
+    .linkedin{
+        border-radius: 10px;
+        border-color: cornflowerblue;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .github{
+        border-radius: 10px;
+        border-color: cornflowerblue;
+        border-width: 1px;
+        border-style: solid;
+        margin-left: 25px;
+    }
+
+
+</style>
+</head>
+
+
+
+<body>
+
+<div class="topnav">
+    <a href=about.html>About</a>
+    <a href=portfolio.html>Portfolio</a>
+    <a href=index.html>Home</a>
+    <a class="active" href=qualifications.html>Qualifications</a>
+    <a href=service.html>Service</a>
+</div>
+
+<div class="hero-image">
+    <div class="hero-text">
+        <h1 style="color:#CAEBF2">Qualifications</h1>
+        <p>view my technical skills</p>
+        <button class="button" onCLick="scrollDown()" style="font-size:35; font-weight: 999"> &#11167; </button>
+    </div>
+</div>
+
+<div id="transition">
+    <br><br>
+</div>
+
+<div class="skills">
+    <div class="howdy">
+        <p>Programming Languages:</p>
+    </div>
+    <div class="bullets">
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Scheme</li>
+        </ul><br>
+    </div>
+    <div class="howdy">
+        <p>Technologies:</p>
+    </div>
+    <div class="bullets">
+        <ul>
+            <li>Git</li>
+            <li>SQL</li>
+            <li>Linux</li>
+            <li>UNIX</li>
+            <li>Bukkit</li>
+            <li>GDB</li>
+            <li>Verilog HDL</li>
+        </ul><br>
+    </div>
+    <div class="howdy">
+        <p>Methodologies:</p>
+    </div>
+    <div class="bullets">
+        <ul>
+            <li>Agile</li>
+            <li>Waterfall</li>
+            <li>Scrum</li>
+        </ul><br>
+    </div>
+</div>
+
+<div class="skills">
+    <div class="howdy">
+        <p>My Interests:</p>
+    </div>
+    <div class="bullets" style="margin-left:342px;">
+        <p>I am passionate about software development and web development. These may sound like two very
+            broad sides of computer science, but I truly enjoy every aspect of programming. I will soon be taking
+            an artificial intelligence course, a reverse engineering course, and multiple cybersecurity courses, so I will
+            continue to expand my knowledge of this incredible field!</p>
+    </div>
+</div>
+
+<div class="pdf">
+    <h1 style="text-align: center">My Résumé</h1>
+    <iframe src="Resume.pdf" width="100%" height="1100px">
+    </iframe>
+</div>
+
+<div class="contact">
+    <hr><p style="color:#333333">
+    If you want to learn more about me, feel free to contact me!<br><br>
+    <a href="mailto:markuslink@tamu.edu"> <img src="email.PNG" width="90" height="70" title="Email Me"
+                                               alt="Mark" class="email"></a>
+    <a href="https://www.linkedin.com/in/marklinkii/" target="_blank"><img src="linkedin.JPG" width="150" height="70" title="LinkedIn"
+                                                                           alt="Mark" class="linkedin"></a>
+    <a href="https://Github.com/marklinkii" target="_blank"><img src="github.PNG" width="90" height="70" title="Github" alt="Mark" class="github">
+    </a><br><br>
+</p>
+</div>
+
+<script>
+    function scrollDown() {
+        var elmnt = document.getElementById("transition");
+        elmnt.scrollIntoView();
+    }
+</script>
+
+</body>
+</html>
